@@ -7,3 +7,53 @@ section#banner
 
 section#create-account
   h1 Criar Conta
+  
+  
+  form action="" method="get"
+
+    .form-row
+      .form-label
+        label.right.inline for="field-primeiro-nome" Primeiro Nome:
+      .form-field
+        input type="text" id="field-primeiro-nome" tabindex="5"
+    
+    .form-row
+      .form-label
+        label.right.inline for="field-ultimo-nome" Último Nome:
+      .form-field
+        input type="text" id="field-ultimo-nome" tabindex="6"
+
+    .form-row
+      .form-label
+        label.right.inline for="field-email-signup" Email:
+      .form-field
+        input type="text" id="field-email-signup" tabindex="6"
+        
+    .form-row
+      .form-label
+        label.right.inline for="field-password-signup" Senha:
+      .form-field
+        input type="password" id="field-password-signup" tabindex="6"
+  
+    .form-row
+      .form-label
+        label.right.inline for="field-password-signup" Sexo:
+      .form-field
+        select
+          option Selecionar
+          
+    .form-row
+      .form-label
+        label.right.inline for="field-password-signup" Data de Nascimento:
+      .form-field
+        select.four.columns
+          option Dia
+        select.four.columns
+          option Mês
+        select.four.columns
+          option Ano
+    
+    .form-row
+      .form-label
+      .form-field
+        button.small.success.button type="Submit" tabindex="3" Criar Conta
