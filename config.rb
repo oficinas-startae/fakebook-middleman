@@ -15,7 +15,7 @@ activate :livereload
 ########################################################
 
 # Susy grids in Compass
-require 'susy'
+require "susy"
 
 # Change Compass configuration
 # compass_config do |config|

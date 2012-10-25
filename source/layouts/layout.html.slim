@@ -8,14 +8,13 @@ html lang="pt-br"
     link rel="shortcut icon" href="/images/favicon.ico"
     == stylesheet_link_tag 'application.css', media: 'all'
 
+
   body class="#{{page_classes}}"
-    / == partial "_partials/header"
+    == partial "_partials/header"
 
-    section.container
-
-      #main
-
+    #content
+      #content-inner  
         == yield
 
-    / == partial "_partials/footer"
+    == partial "_partials/footer"
     / == javascript_include_tag  "all"
