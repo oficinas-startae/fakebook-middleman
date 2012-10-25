@@ -13,14 +13,19 @@ activate :livereload
 
 # Compass
 ########################################################
+require "zurb-foundation"
+# require "susy"
+# Require any additional compass plugins here.
 
-# Susy grids in Compass
-require "susy"
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  # output_style = :expanded or :nested or :compact or :compressed
+  config.output_style = :expanded
+  config.preferred_syntax = :sass
+  # To enable relative paths to assets via compass helper functions. Uncomment:
+  config.relative_assets = true
+end
 
 
 # Page options, layouts, aliases and proxies
@@ -59,9 +64,11 @@ Time.zone = "Brasilia"
 #   end
 # end
 
+activate :directory_indexes
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+
 
 # Build-specific configuration
 configure :build do
@@ -72,10 +79,10 @@ configure :build do
   # activate :minify_javascript
 
   # Enable cache buster
-  # activate :cache_buster
+  activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher

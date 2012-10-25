@@ -10,10 +10,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
-    compass (0.13.alpha.0)
+    compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
-      sass (~> 3.2.0.alpha.93)
+      sass (~> 3.1)
     daemons (1.1.9)
     em-websocket (0.3.8)
       addressable (>= 2.1.1)
@@ -72,6 +72,9 @@ GEM
       middleman-more (~> 3.0.1)
       sprockets (~> 2.1, < 2.5)
       sprockets-sass (~> 0.8.0)
+    modular-scale (1.0.2)
+      compass (>= 0.11.5)
+      sassy-math (>= 1.2)
     multi_json (1.3.6)
     oily_png (1.0.2)
       chunky_png (~> 1.2.1)
@@ -96,6 +99,8 @@ GEM
     rb-inotify (0.8.8)
       ffi (>= 0.5.0)
     sass (3.2.1)
+    sassy-math (1.2)
+      compass (~> 0.11)
     sinatra (1.3.3)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -115,9 +120,6 @@ GEM
     sprockets-sass (0.8.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    susy (1.0.3)
-      compass (>= 0.12.2)
-      sass (>= 3.2.0)
     syntax (1.0.0)
     temple (0.5.5)
     thin (1.5.0)
@@ -132,18 +134,23 @@ GEM
       multi_json (~> 1.3)
     url_mount (0.2.1)
       rack
+    zurb-foundation (3.1.1)
+      compass (>= 0.12.2)
+      modular-scale (>= 1.0.2)
+      rake
+      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.13.alpha.0)
+  compass (~> 0.12.2)
   middleman (~> 3.0.6)
   middleman-livereload (~> 3.0.0)
   middleman-smusher (~> 3.0.0)
   oily_png (~> 1.0.2)
   sass (~> 3.2.1)
   slim (~> 1.3.3)
-  susy (~> 1.0.1)
   thin (~> 1.5.0)
   tzinfo (~> 0.3.33)
+  zurb-foundation (~> 3.1.1)
