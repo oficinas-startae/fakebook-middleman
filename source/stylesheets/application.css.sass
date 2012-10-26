@@ -115,6 +115,7 @@ a
 .box
   background-color: #fff
   +box-shadow(0 1px 4px rgba(#000, .2))
+  +pie-clearfix
 
   .box-header
     padding: 15px
@@ -161,8 +162,12 @@ a
 
 
 #profile
-  +column(12)
+  +column(11)
   
+  #user-activity
+    +column(7)
+    +push(3)
+    border-left: 1px solid #dce0e8
   
   #cover-page
     
@@ -191,8 +196,7 @@ a
       +font-size(22)
       line-height: 45px
       margin-left: 154px
-  
-  
+
 
 #forgot-password
   +column(8)
