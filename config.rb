@@ -24,7 +24,7 @@ compass_config do |config|
   config.output_style = :expanded
   config.preferred_syntax = :sass
   # To enable relative paths to assets via compass helper functions. Uncomment:
-  config.relative_assets = true
+  # config.relative_assets = true
 end
 
 
@@ -86,7 +86,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  activate :relative_assets
+  # activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
