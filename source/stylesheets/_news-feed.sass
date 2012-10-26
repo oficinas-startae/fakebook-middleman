@@ -80,33 +80,36 @@
           padding-left: 6px
 
       .count-likes, .count-comments
-        color: #83adbc
-        font-size: 12px
-        position: relative
-        margin-left: 6px
-        padding-left: 16px
+        a
+          color: #83adbc
+          font-size: 12px
+          position: relative
+          margin-left: 6px
+          padding-left: 16px
 
       .count-likes
-        &:before
-          content: ""
-          position: absolute
-          left: 0
-          top: -1px
-          width: 13px
-          height: 13px
-          background: transparent url("/images/icon-like.png") no-repeat 0 0
-          +background-size(contain)
+        a
+          &:before
+            content: ""
+            position: absolute
+            left: 0
+            top: -2px
+            width: 13px
+            height: 13px
+            background: transparent url("/images/icon-like.png") no-repeat 0 0
+            +background-size(contain)
           
       .count-comments
-        &:before
-          content: ""
-          position: absolute
-          left: 0
-          top: 0
-          width: 13px
-          height: 13px
-          background: transparent url("/images/icon-comment.png") no-repeat 0 0
-          +background-size(contain)
+        a
+          &:before
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            width: 13px
+            height: 13px
+            background: transparent url("/images/icon-comment.png") no-repeat 0 0
+            +background-size(contain)
       
       .timestamp
         padding-left: 6px
