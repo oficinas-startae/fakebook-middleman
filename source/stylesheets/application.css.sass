@@ -79,31 +79,52 @@ header#header
     +outerRow
     padding-top: 40px
     
-    #create-account
-      +column(6)
-      
-      h1
-        font-size: ms(2)
-        margin: 0
-        color: #405a68
-        border-bottom: 1px solid #ccd3db
-        padding-bottom: 10px
-      
-      form
-        padding-top: 15px
 
-        .form-row
-          +innerRow(collapse)
-          +pie-clearfix
-        
-        .form-label
-          +column(4)
-        
-        .form-field
-          +column(8)
-          
-          select
-            margin-top: 7px
+#create-account
+  +column(6)
+  
+  h1
+    font-size: ms(2)
+    margin: 0
+    color: #405a68
+    border-bottom: 1px solid #ccd3db
+    padding-bottom: 10px
+  
+  form
+    padding-top: 15px
 
-    #banner
-      +column(6)
+    .form-row
+      +innerRow(collapse)
+      +pie-clearfix
+    
+    .form-label
+      +column(4)
+    
+    .form-field
+      +column(8)
+      
+      select
+        margin-top: 7px
+
+#banner
+  +column(6)
+
+
+#forgot-password
+  +column(8)
+  +push(2)
+
+  .panel
+    padding: 0
+    +border-radius(3px)
+
+  h1
+    font-size: ms(3)
+    background-color: #fbfcfc
+    border-bottom: 1px solid #e4e4e4
+    color: #405a68
+    padding: 15px
+    +border-top-radius(3px)
+
+  form
+    padding: 15px
