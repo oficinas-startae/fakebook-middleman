@@ -17,7 +17,39 @@
       +inline-block
       padding-left: 10px
 
+#update-status
+  +column(8)
+  
+  .box-content
+    padding: 15px
+  
+  form
+    position: relative
 
+    .item-image
+      position: absolute
+      left: 0
+      top: 0
+
+    .comment-textarea
+      margin-left: 65px
+
+      textarea
+        +border-radius(0)
+        border: 1px solid #94bece
+        border-bottom: 1px solid #dce0e8
+        resize: none
+        margin: 0
+        height: 80px
+  
+  .form-actions
+    +pie-clearfix
+    background-color: #f7f9f9
+    border: 1px solid #94bece
+    border-top: none
+    padding: 15px
+    margin-left: 65px
+  
 #news-feed
   +column(8)
 
