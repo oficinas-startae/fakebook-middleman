@@ -1,0 +1,32 @@
+---
+title: Fakebook - Atualizar Status
+---
+      
+        
+section#news-feed-nav
+  a href="#"
+    .user-avatar
+      .user-avatar-inner
+        == image_tag("user-rafael.jpg", width: 40, height: 40)
+    .user-name Rafael Torales
+
+
+section#news-feed
+
+  .box
+
+    header.box-header
+      a.button href="#" Atualizar Status
+    
+    .box-content
+
+      .comment-form
+        form
+          .item-image.usuario
+            span.item-image-wrap
+              == image_tag("user-chuck.jpg", width: 40, height: 40)
+          
+          textarea.comment-textarea placeholder="Deixe seu comentário..."
+          
+          .form-actions
+            button.button.primary.small.disable Postar

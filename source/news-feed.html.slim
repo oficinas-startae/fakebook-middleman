@@ -4,11 +4,14 @@ title: Fakebook - News Feed
       
         
 section#news-feed-nav
-  a href="#"
-    .user-avatar
-      .user-avatar-inner
-        == image_tag("user-rafael.jpg", width: 40, height: 40)
-    .user-name Rafael Torales
+  
+  .welcome-box
+    a href="/profile"
+      .user-avatar
+        .user-avatar-inner
+          == image_tag("user-rafael.jpg", width: 40, height: 40)
+      .user-name Rafael Torales
+
 
 
 section#news-feed
@@ -29,32 +32,56 @@ section#news-feed
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Chuck Norris
                 .user-comment
                   p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
-                p.timestamp
-                  | postado em
-                  time class="js-timeago" datetime="" 20 de Setembro
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
-                == image_tag("user-chuck.jpg", width: 40, height: 40)
+                == image_tag("user-rafael.jpg", width: 40, height: 40)
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Rafael Torales
                 .user-comment
                   p Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
-                == image_tag("user-chuck.jpg", width: 40, height: 40)
+                == image_tag("user-mclovin.jpg", width: 40, height: 40)
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Mc Lovin
                 .user-comment
                   p Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
@@ -62,9 +89,18 @@ section#news-feed
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Chuck Norris
                 .user-comment
                   p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
@@ -72,29 +108,58 @@ section#news-feed
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Chuck Norris
                 .user-comment
                   p Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
+                  p
+                    == image_tag("wall-chuck-norris.jpeg")
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
-                == image_tag("user-chuck.jpg", width: 40, height: 40)
+                == image_tag("user-mclovin.jpg", width: 40, height: 40)
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Mc Lovin
                 .user-comment
                   p Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
-                == image_tag("user-chuck.jpg", width: 40, height: 40)
+                == image_tag("user-rafael.jpg", width: 40, height: 40)
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Rafael Torales
                 .user-comment
                   p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
@@ -102,9 +167,18 @@ section#news-feed
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Chuck Norris
                 .user-comment
                   p Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 26
+                  span.count-comments 100
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
           li
             .item-image.usuario
               span.item-image-wrap
@@ -112,17 +186,15 @@ section#news-feed
             .item-info
               .item-activity
                 .user-name
-                  a href="#" Chuck Norris
+                  a href="/profile" Chuck Norris
                 .user-comment
                   p Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
-      
-      .comment-form
-        form
-          .item-image.usuario
-            span.item-image-wrap
-              == image_tag("user-chuck.jpg", width: 40, height: 40)
-          
-          textarea.comment-textarea placeholder="Deixe seu comentário..."
-          
-          .form-actions
-            button.button.primary.small.disable Postar
+                .item-actions
+                  span.action-like
+                    a href="#" Curtir
+                  span.action-comment
+                    a href="#" Comentar
+                  span.count-likes 2
+                  span.count-comments 0
+                  span.timestamp
+                    time class="js-timeago" datetime="" 20 de Setembro
