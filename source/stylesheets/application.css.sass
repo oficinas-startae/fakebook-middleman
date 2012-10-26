@@ -1,3 +1,4 @@
+@charset "utf-8"
 @mixin image-2x($image, $width, $height)
   @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx)
     /* on retina, use image that's scaled by 2 */
@@ -7,6 +8,8 @@
 @import "settings"
 @import "compass"
 @import "foundation"
+@import "header"
+@import "news-feed"
 
 body
   background-color: #ecf0f1
@@ -18,10 +21,18 @@ header#header
   height: 90px
   color: #fff
 
+  body.news-feed &
+    height: 40px
+
+
+
   #header-inner
     +outerRow
     height: 90px
     overflow: hidden
+
+    body.news-feed &
+      height: 40px
 
     #logo
       width: 138px
@@ -32,6 +43,16 @@ header#header
       +hide-text
       position: absolute
       top: 30px
+      
+      body.news-feed &
+        width: 138px
+        height: 28px
+        top: 11px
+        +image-2x("/images/logo-fakebook@2x.png", 92px, 19px)
+
+        a
+          width: 138px
+          height: 28px
 
       a
         width: 138px

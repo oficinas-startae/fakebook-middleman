@@ -1,10 +1,9 @@
-
 ---
 title: Bem-vindo ao Fakebook!
 ---
 
 section#banner
-  img src="images/home-video.jpg"
+  == image_tag("home-video.jpg")
 
 section#create-account
   h1 Criar Conta
@@ -18,7 +17,7 @@ section#create-account
       .form-field
         .file.upload
           .fileupload.thumbnail style="width: 40px; height: 40px; float: left; border: 1px solid #ccc;"
-            img src="images/user-avatar.png" width="40" height="40"
+            == image_tag("user-avatar.png", width: 40, height: 40)
           input type="file" style="float: left; margin: 10px 0 23px 5px;"
 
     .form-row

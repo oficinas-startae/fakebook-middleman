@@ -38,7 +38,7 @@ Time.zone = "Brasilia"
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+page "/news-feed.html", :layout => "/layouts/logged.html"
 #
 # A path which all have the same layout
 # with_layout :admin do
