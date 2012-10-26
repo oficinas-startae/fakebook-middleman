@@ -17,6 +17,37 @@
       +inline-block
       padding-left: 10px
 
+#post-details
+  +column(8)
+
+#profile
+  +column(8)
+  
+  form
+    padding-top: 15px
+  
+    
+    .form-row
+      +innerRow(collapse)
+      +pie-clearfix
+    
+    .form-label
+      +push(1)
+      +column(3)
+    
+    .form-field
+      +push(1)
+      +column(7)
+      
+      select
+        margin-top: 7px
+
+    .form-action
+      background-color: #f7f9f9
+      padding: 15px
+      border-top: 1px solid #dce0e8
+
+
 #update-status
   +column(8)
   
