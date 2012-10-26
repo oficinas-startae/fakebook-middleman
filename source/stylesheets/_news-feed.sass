@@ -4,3 +4,110 @@
 
 #news-feed
   +column(9)
+
+
+.list-view
+  +pie-clearfix
+  
+  &.ui-comments-list
+    padding-top: 0
+    +pie-clearfix
+  
+    ul
+      list-style: none
+      padding: 0 0 10px 0
+      margin: 0
+      width: 100%
+      text-align: left
+  
+    li
+      +pie-clearfix
+      position: relative
+      vertical-align: middle
+      padding: 15px 15px 0 15px
+      min-height: 70px
+      +box-shadow(0 1px 0 #dce0e8)
+      
+      &:last-of-type
+        +box-shadow(none)
+  
+      &:hover
+        .comment-actions
+          display: block
+  
+    //TEXTOS
+    .item-info
+      margin-left: 64px
+          
+    .item-activity, .timestamp
+      font-size: 11px
+      line-height: 11px
+      position: relative
+  
+    .comment-actions
+      position: absolute
+      top: 3px
+      right: -10px
+      display: none
+  
+      a
+        color: #333
+        &:hover
+          color: #ccc
+    
+    .timestamp
+      color: #333
+  
+      time
+        font-weight: bold
+        color: darken(#ccc, 5%)
+          
+    .user-name
+      font-weight: bold
+      position: relative
+      top: 1px
+      color: #3193b7
+      font-size: 14px
+      
+  
+    .user-comment
+      font-weight: normal
+      padding: 8px 0 0 0
+      p
+        font-size: 13px
+        line-height: 1.3em
+            
+    // IMAGEM
+    .item-image.usuario
+      position: absolute
+          
+    .item-image
+      width: 50px
+      float: left
+      margin-right: 5px
+      color: #333
+        
+    .item-image-wrap
+      position: relative
+      display: inline-block
+      max-width: 100%
+      vertical-align: bottom
+  
+    // image-wrap:after pseudo element (overlaying container)
+    .item-image-wrap:after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      +border-radius(2px)
+      +box-shadow(rgba(#000, .3) 0 1px 1px inset, rgba(#fff, .4) 0 1px 0)
+  
+    .item-image-wrap img
+      vertical-align: bottom
+      width: 50px
+      +border-radius(1px)
+          
+      .item-info
+        padding-top: 8px

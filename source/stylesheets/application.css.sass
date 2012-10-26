@@ -20,6 +20,7 @@ header#header
   background-color: #339fa0
   height: 90px
   color: #fff
+  border-bottom: 1px solid darken(#339fa0, 5%)
 
   body.news-feed &
     height: 40px
@@ -98,8 +99,25 @@ header#header
 
   #content-inner
     +outerRow
-    padding-top: 40px
+    padding-bottom: 40px
+  
+    body.index &
+      padding-top: 40px
+
+
     
+.box
+  background-color: #fff
+  +box-shadow(0 1px 4px rgba(#000, .2))
+
+  .box-header
+    padding: 15px
+    border-bottom: 1px solid #ccd3db
+    background-color: #fafdfe
+
+  .box-content
+
+
 
 #create-account
   +column(6)
