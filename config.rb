@@ -4,6 +4,9 @@ require 'rubygems'
 # Slim HTML
 ########################################################
 require "slim"
+Slim::Engine.set_default_options format: :html5
+Slim::Engine.set_default_options pretty: true
+Slim::Engine.set_default_options tabsize: 2
 
 
 # Livereload
@@ -20,11 +23,8 @@ require "zurb-foundation"
 
 # Change Compass configuration
 compass_config do |config|
-  # output_style = :expanded or :nested or :compact or :compressed
   config.output_style = :expanded
   config.preferred_syntax = :sass
-  # To enable relative paths to assets via compass helper functions. Uncomment:
-  # config.relative_assets = true
 end
 
 
@@ -76,6 +76,13 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  compass_config do |config|
+    config.output_style = :expanded
+    config.relative_assets = true
+    config.line_comments = false
+    config.relative_assets = true
+  end
+  
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -86,7 +93,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
