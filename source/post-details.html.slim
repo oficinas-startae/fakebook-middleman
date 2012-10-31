@@ -1,5 +1,6 @@
 ---
 title: Fakebook - Detalhes Post
+body_class: "area-restrita"
 ---
       
 == partial "_partials/sidebar"
@@ -10,9 +11,11 @@ section#post-details
 
     header.box-header
       h1 Detalhes Post
-    
-    .box-content
 
+
+
+    /! begin .post-details
+    .post-details
       .list-view.ui-comments-list
         ul
           li
@@ -26,13 +29,113 @@ section#post-details
                 .user-comment
                   p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
                 .item-actions
-                  span.action-like
-                    a href="#" Curtir
-                  span.action-comment
-                    a href="#" Comentar
-                  span.count-likes
-                    a href="#" 2
-                  span.count-comments
-                    a href="#" 0
-                  span.timestamp
+                  span.timestamp.first
                     time class="js-timeago" datetime="" 20 de Setembro
+    /! end .post-details
+
+
+
+    /! begin .post-actions-row
+    .post-actions-row
+      .post-actions
+        span.action-like
+          a href="#" Curtir
+        span.action-comment
+          a href="#" Comentar
+      .post-like-counter
+        span.count-likes <a href="#">Renato Carvalho</a>, <a href="#">Julio Protzek</a> e <a href="#">Flavio Ludgero</a> curtiram isso.
+    /! end .post-actions-row
+
+
+
+    /! begin .post-comments
+    .post-comments
+    
+      .list-view.ui-comments-list
+        ul
+          li
+            .item-image.usuario
+              span.item-image-wrap
+                == image_tag("user-mclovin.jpg", width: 35, height: 35)
+            .item-info
+              .item-activity
+                .user-name
+                  a href="/profile" Mc Lovin
+                .user-comment
+                  p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.timestamp.first
+                    time class="js-timeago" datetime="" 20 de Setembro
+                    
+          li
+            .item-image.usuario
+              span.item-image-wrap
+                == image_tag("user-rafael.jpg", width: 35, height: 35)
+            .item-info
+              .item-activity
+                .user-name
+                  a href="/profile" Rafael Torales
+                .user-comment
+                  p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.timestamp.first
+                    time class="js-timeago" datetime="" 20 de Setembro
+                    
+          li
+            .item-image.usuario
+              span.item-image-wrap
+                == image_tag("user-mclovin.jpg", width: 35, height: 35)
+            .item-info
+              .item-activity
+                .user-name
+                  a href="/profile" Mc Lovin
+                .user-comment
+                  p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.timestamp.first
+                    time class="js-timeago" datetime="" 20 de Setembro
+                    
+          li
+            .item-image.usuario
+              span.item-image-wrap
+                == image_tag("user-rafael.jpg", width: 35, height: 35)
+            .item-info
+              .item-activity
+                .user-name
+                  a href="/profile" Rafael Torales
+                .user-comment
+                  p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.timestamp.first
+                    time class="js-timeago" datetime="" 20 de Setembro
+
+          li
+            .item-image.usuario
+              span.item-image-wrap
+                == image_tag("user-rafael.jpg", width: 35, height: 35)
+            .item-info
+              .item-activity
+                .user-name
+                  a href="/profile" Rafael Torales
+                .user-comment
+                  p Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                .item-actions
+                  span.timestamp.first
+                    time class="js-timeago" datetime="" 20 de Setembro
+    /! end .post-comments
+
+
+
+    /! begin .comment-form
+    .comment-form
+      form
+        .item-image.usuario
+          span.item-image-wrap
+            == image_tag("user-chuck.jpg", width: 35, height: 35)
+        textarea.comment-textarea placeholder="Deixe seu comentário..."
+        .form-actions
+          button.button.primary.small.disable Postar
+    /! end .comment-form
+
+  /! end .box
+/! end section#post-details

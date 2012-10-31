@@ -8,10 +8,8 @@ html lang="pt-br"
     link rel="shortcut icon" href="/images/favicon.ico"
     == stylesheet_link_tag 'application.css', media: 'all'
 
-
-  body class="#{{page_classes}}"
+  body class="#{{page_classes}} #{{data.page.body_class}}"
     == partial "_partials/header"
-
     
     #content
       #content-inner
